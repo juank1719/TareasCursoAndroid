@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.juancarlos.checkboxjuanca.MainActivity">
+
+  <CheckBox
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Azul"
+      android:id="@+id/Cheky1"
+            />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rojo"
+        android:id="@+id/cheky2"
+        android:layout_below="@+id/Cheky1"
+        />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verde"
+        android:id="@+id/cheky3"
+        android:layout_below="@+id/cheky2"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="El Boton"
+        android:id="@+id/Elboton"
+        android:layout_below="@+id/cheky3"
+        android:layout_centerHorizontal="true"
+        android:OnClick="TouchMe"
+        />
+
+</LinearLayout>
