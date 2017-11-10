@@ -1,0 +1,46 @@
+package com.example.juancarlos.radiobotonjuanca;
+
+import android.graphics.Color;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.widget.RadioGroup;
+
+
+
+public class MainActivity extends AppCompatActivity
+{
+    RadioGroup Grupito;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState)
+    {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        Grupito=(RadioGroup) findViewById(R.id.rabton);
+        Grupito.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i)
+            {
+                switch (i)
+                {
+                    case  R.id.rabto1:
+                        getWindow().getDecorView().setBackgroundColor(Color.parseColor
+                                ("#FFFF00"));
+                        break;
+                    case  R.id.rabto2:
+                        getWindow().getDecorView().setBackgroundColor(Color.parseColor
+                                ("#FF00FF"));
+                        break;
+                    case R.id.rabto3:
+                        getWindow().getDecorView().setBackgroundColor(Color.parseColor("#FF00FF"));
+                        break;
+                    case R.id.rabto4:
+                        getWindow().getDecorView().setBackgroundColor(Color.parseColor("#00FFFF"));
+                        break;
+
+                }
+
+            }
+        });
+    }
+}
