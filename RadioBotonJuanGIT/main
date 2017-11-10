@@ -25,11 +25,11 @@ public class MainActivity extends AppCompatActivity
                 {
                     case  R.id.rabto1:
                         getWindow().getDecorView().setBackgroundColor(Color.parseColor
-                                ("#FFFF00"));
+                                ("#FF0000"));
                         break;
                     case  R.id.rabto2:
                         getWindow().getDecorView().setBackgroundColor(Color.parseColor
-                                ("#FF00FF"));
+                                ("#F7FE2E"));
                         break;
                     case R.id.rabto3:
                         getWindow().getDecorView().setBackgroundColor(Color.parseColor("#FF00FF"));
