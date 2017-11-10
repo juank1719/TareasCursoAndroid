@@ -1,0 +1,24 @@
+package com.example.juancarlos.buttosjuanca;
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.Toast;
+
+public class MainActivity extends AppCompatActivity
+{
+    Button Aloooh;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        Aloooh = (Button) findViewById(R.id.idAloooh);
+
+    }
+    public void BtnClick(View v)
+    {
+      Toast.makeText(this,"Picaste el boton, te vi",Toast.LENGTH_SHORT).show();
+    }
+}
