@@ -1,0 +1,62 @@
+package com.example.juancarlos.checkboxjuanca;
+
+import android.graphics.Color;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.widget.Button;
+import android.view.View;
+import android.widget.CheckBox;
+
+public class MainActivity extends AppCompatActivity
+{
+    Button btn1; CheckBox cheekky1; CheckBox cheekky2; CheckBox cheekyk3;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState)
+    {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        btn1= (Button) findViewById(R.id.Elboton);
+        cheekky1= (CheckBox) findViewById(R.id.cheky1);
+        cheekky2= (CheckBox) findViewById(R.id.cheky2);
+        cheekyk3= (CheckBox) findViewById(R.id.cheky3);
+        btn1.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                TouchMe(view);
+
+            }
+        });
+    }
+    public void TouchMe (View v)
+    {
+      if (cheekky1.isChecked() == true &&cheekky2.isChecked()== true &&cheekyk3.isChecked()==true)
+      {
+          getWindow().getDecorView().setBackgroundColor(Color.parseColor("#FFFFFF"));
+      }
+      else if (cheekky1.isChecked()==true &&cheekky2.isChecked()==true)
+      {
+          getWindow().getDecorView().setBackgroundColor(Color.parseColor("#FB03BD"));
+      }
+      else if (cheekky1.isChecked()==true &&cheekyk3.isChecked()==true)
+      {
+          getWindow().getDecorView().setBackgroundColor(Color.parseColor("#05E2FB"));
+      }
+      else if (cheekky2.isChecked()==true &&cheekyk3.isChecked()==true)
+      {
+          getWindow().getDecorView().setBackgroundColor(Color.parseColor("#FB7404"));
+      }
+      else if (cheekky2.isChecked()==true )
+      {
+          getWindow().getDecorView().setBackgroundColor(Color.parseColor("#FB0307"));
+      }
+      else if (cheekyk3.isChecked()==true )
+      {
+          getWindow().getDecorView().setBackgroundColor(Color.parseColor("#1DF605"));
+      }
+
+
+    }
+}
