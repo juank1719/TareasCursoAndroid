@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.juancarlos.multicompletatexto5000juanca.MainActivity">
+
+    <MultiAutoCompleteTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/jeje"
+        android:completionThreshold="1"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Input Text: \n hola, bebe, como, estas, tengo, hambre, muchas, ganas,
+    de, bailar, contigo, estoy, aburrido, haciendo, este, codigo, y, mis, librerias, no, funcionan, aiuda,
+    porfavor, te, lo, suplico, amigo, gracias, por, tu, noble, atencion"/>"/>
+
+</android.support.constraint.ConstraintLayout>
