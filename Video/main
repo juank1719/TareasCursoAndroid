@@ -1,0 +1,23 @@
+package com.example.juancarlos.videojuan;
+
+import android.net.Uri;
+import android.provider.MediaStore;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.widget.MediaController;
+import android.widget.VideoView;
+
+public class MainActivity extends AppCompatActivity {
+    VideoView videon;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        videon= (VideoView) findViewById(R.id.videin);
+        videon.setVideoURI(Uri.parse("https://www.youtube.com/watch?v=WmB6ZT7eKJM"));
+        videon.setMediaController(new MediaController(this));
+        videon.requestFocus();
+        videon.start();
+    }
+}
